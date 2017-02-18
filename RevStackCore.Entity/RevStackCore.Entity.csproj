@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.5</TargetFramework>
+	<PackageId>RevStackCore.Entity</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>S. Francis</Authors>
+    <Description>EntityFrameworkCore implementation of the RevStackCore repository pattern</Description>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>Net Standard 1.5 release</PackageReleaseNotes>
+    <Copyright>Copyright 2017</Copyright>
+    <PackageTags>RevStackCore Repository Entity</PackageTags>		
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Repository\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore">
+      <Version>1.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="RevStackCore.Pattern">
+      <Version>1.0.5</Version>
+    </PackageReference>
+    <PackageReference Include="RevStackCore.Extensions">
+      <Version>1.0.0</Version>
+    </PackageReference>
+  </ItemGroup>
+</Project>
