@@ -1,14 +1,17 @@
-﻿<Project Sdk="Microsoft.NET.Sdk" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.5</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
 	<PackageId>RevStackCore.Entity</PackageId>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>2.0.0</PackageVersion>
     <Authors>S. Francis</Authors>
     <Description>EntityFrameworkCore implementation of the RevStackCore repository pattern</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <PackageReleaseNotes>Net Standard 1.5 release</PackageReleaseNotes>
-    <Copyright>Copyright 2017</Copyright>
+    <PackageReleaseNotes>Net Standard 2.0 release</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/RevStackCore/Entity.git</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/RevStackCore/Entity/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageIconUrl>https://s3.amazonaws.com/revstack/icons/revstackcore-64x64.png</PackageIconUrl>
+    <Copyright>Copyright 2019</Copyright>
     <PackageTags>RevStackCore Repository Entity</PackageTags>		
   </PropertyGroup>
 
@@ -16,14 +19,11 @@
     <Folder Include="Repository\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore">
-      <Version>1.1.0</Version>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.2">
     </PackageReference>
-    <PackageReference Include="RevStackCore.Pattern">
-      <Version>1.0.5</Version>
+    <PackageReference Include="RevStackCore.Pattern" Version="1.0.5">
     </PackageReference>
-    <PackageReference Include="RevStackCore.Extensions">
-      <Version>1.0.0</Version>
+    <PackageReference Include="RevStackCore.Extensions" Version="1.0.7">
     </PackageReference>
   </ItemGroup>
 </Project>
